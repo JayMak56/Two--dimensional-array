@@ -1,0 +1,29 @@
+#  Standard Deviation
+import math
+import collections
+
+sample = [100, 200, 300, 200, 400, 300, 400, 600, 300, 700, 200, 800]
+n = (sum(collections.Counter(sample).values()))
+print('Number of samples =', n)
+s = math.fsum(sample)
+
+print('Total of sample =', s)
+mean = s / n
+print('The mean  =', mean)
+d1 = (sample[0] - mean) ** 2
+d2 = (sample[1] - mean) ** 2
+d3 = (sample[2] - mean) ** 2
+d4 = (sample[3] - mean) ** 2
+d5 = (sample[4] - mean) ** 2
+d6 = (sample[5] - mean) ** 2
+d7 = (sample[6] - mean) ** 2
+d8 = (sample[7] - mean) ** 2
+d9 = (sample[8] - mean) ** 2
+d10 = (sample[9] - mean) ** 2
+d11 = (sample[10] - mean) ** 2
+d12 = (sample[11] - mean) ** 2
+q = (d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12)
+Tot = math.fsum(q)
+print('Sum of variance =', Tot)
+Sd = math.sqrt(Tot / (n - 1))
+print('Standard Deviation = ', Sd)
